@@ -1,0 +1,19 @@
+.btn {
+  width: 90px;
+  height: 40px;
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: none;
+}
+
+.primary {
+  composes: btn;
+  composes: primaryBg from "./Colors.module.css";
+  composes: primaryColor from "./Colors.module.css";
+}
+
+.secondary {
+  composes: btn;
+  composes: secondaryBg from "./Colors.module.css";
+  composes: secondaryColor from "./Colors.module.css";
+}
